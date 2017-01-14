@@ -28,7 +28,8 @@
 
 ## 配置
 
-编辑 `~/.meow/rc` (OS X, Linux) 或 `rc.txt` (Windows)，例子：
+
+###编辑 `~/.meow/rc` (OS X, Linux) 或 `rc.txt` (Windows)，例子：
 
     # 监听地址，设为0.0.0.0可以监听所有端口，共享给局域网使用
     listen = http://127.0.0.1:4411
@@ -41,7 +42,12 @@
     # proxy = ss://aes-128-cfb:password@example.server.com:25
     # HTTPS 上级代理
     # proxy = https://user:password@example.server.com:port
+###chrome中使用 switchyOmega，添加profile，设置severs为http，127.0.0.1,port写rc文件中使用的端口。
 
+###终端中输入
+
+       ./MEOW
+       
 ## 工作方式
 
 当 MEOW 启动时会从配置文件加载直连列表和强制使用代理列表，详见下面两节。
